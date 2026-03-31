@@ -6,6 +6,7 @@ import { exercise5 } from './keyboardDisplay.js'
 import { exercise6 } from './progressBar.js'
 import { exercise7 } from './rangeRandom.js'
 import { exercise9 } from './mouseFollower.js'
+import { exercise10 } from './controlledTimer.js'
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -37,4 +38,5 @@ document.addEventListener("DOMContentLoaded", () => {
     exercise6();
     exercise7();
     exercise9();
+    exercise10();
 });
