@@ -102,12 +102,28 @@ canvas {
 }
 
 #bar6 {
-    width: 100%;
-    background-color: white;
+    width: 98%;
+    background-color: #ffffff;
 }
 
 #progress6 {
     width: 1%;
     height: 30px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.2s;
+}
+
+#slider6 {
+    width: 100%;
+}
+
+.input-range {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.input-number {
+    margin-right: 20px;
+    margin-left: 5px;
 }
