@@ -1,9 +1,11 @@
+/* Body */
 body {
     font-family: Verdana;
     background-color: #1e1e1e;
     color: white;
 }
 
+/* Level container (1 -> 4) */
 .level {
     border: 6px solid;
     margin: 5px 5px 10px;
@@ -15,6 +17,7 @@ body {
 .level3 { border-color: #ff7300; }
 .level4 { border-color: #ff0000; }
 
+/* Challenge container (1 -> 16) */
 .challenge {
     border: 4px solid;
     margin: 5px;
@@ -27,6 +30,7 @@ body {
 .level3 .challenge { border-color: #8c672c; }
 .level4 .challenge { border-color: #671515; }
 
+/* Solution Container (1 -> 16) */
 .solution {
     display: flex;
     flex-direction: column;
@@ -39,6 +43,7 @@ body {
     background-color: rgb(49, 49, 52);
 }
 
+/* Buttons */
 .button{
     font-family: Verdana;
     margin: 5px;
@@ -49,35 +54,36 @@ body {
     cursor: pointer;
     transition: background 0.2s;
 }
-
 .button:hover {
     background: #9d9d9d;
 }
-
 .button-row {
     display: flex;
 }
+.button.active {
+    background: #27272a;
+    color: white;
+}
 
+/* Rectangle  (2) */
 .rectangle {
     width: 200px;
     height: 100px;
     background: white;
 }
 
+/* Image  (3) */
 #image4 {
     width: 200px;
     height: auto;
 }
 
+/* Hidden */
 .hidden {
     display: none;
 }
 
-.button.active {
-    background: #27272a;
-    color: white;
-}
-
+/* Level header (text + button) */
 .level-header {
     display: flex;
     justify-content: space-between;
@@ -85,6 +91,7 @@ body {
     margin-right: 15px;
 }
 
+/* Buttons that hide a level */
 .toggleLevel {
     font-family: Verdana;
     margin: 5px;
@@ -95,35 +102,48 @@ body {
     cursor: pointer;
 }
 
+/* Canvas (9) */
 canvas {
     width: 100%;
     height: 150px;
     background: white;
 }
 
+/* Progress bar (6) */
 #bar6 {
     width: 98%;
     background-color: #ffffff;
 }
-
 #progress6 {
     width: 1%;
     height: 30px;
     background-color: rgb(255, 255, 255);
     transition: width 0.2s;
 }
-
+/* Slider (6) */
 #slider6 {
     width: 100%;
 }
 
+/* Input range random (7) */
 .input-range {
     display: flex;
     align-items: center;
     margin: 5px;
 }
-
 .input-number {
     margin-right: 20px;
     margin-left: 5px;
+}
+
+/* DARK Mode */
+body.dark {
+    background-color: #ffffff;
+    color: #000000;
+}
+body.dark .challenge {
+    background-color: rgb(224, 224, 224);
+}
+body.dark .solution {
+    background-color: rgb(203, 203, 203);
 }

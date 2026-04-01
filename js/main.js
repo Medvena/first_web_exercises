@@ -5,6 +5,7 @@ import { exercise4 } from './buttonToggle.js'
 import { exercise5 } from './keyboardDisplay.js'
 import { exercise6 } from './progressBar.js'
 import { exercise7 } from './rangeRandom.js'
+import { exercise8 } from './darkLightToggle.js'
 import { exercise9 } from './mouseFollower.js'
 import { exercise10 } from './controlledTimer.js'
 
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     exercise5();
     exercise6();
     exercise7();
+    exercise8();
     exercise9();
     exercise10();
 });
